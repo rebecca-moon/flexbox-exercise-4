@@ -97,40 +97,65 @@ textarea {
 
 
 html {
-  background-color: darkgray;
+  background-color: lightgray;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: 100%;
+  max-width: 1200px;
+}
+
+header,
+footer {
+    height: 80px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+main {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: 0;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: rgb(165, 71, 33);
   line-height: 1.5em;
   font-size: 1em;
-  height: 300px;
   width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 200px;
+  margin: 0;
 }
 
-.div-1, .div-2 {
-    border-right: 1px solid black;
+footer {
+    border-top: 1px solid black;
 }
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
 
 
 
